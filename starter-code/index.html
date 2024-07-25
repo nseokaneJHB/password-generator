@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <title>Password generator app</title>
+
+    <link rel="stylesheet" href="assets/css/index.css">
+  </head>
+
+  <body class="main-wrapper">
+    <div class="wrapper" style="width: 100%;">
+      <h1 class="wrapper-heading">Password Generator</h1>
+
+      <div class="wrapper-head">
+        <h1 class="wrapper-head-password" id="password-value"></h1>
+        <img src="assets/images/icon-copy.svg" alt="Copy Icon" width="17.5px" height="20px" id="copy"
+          style="cursor: pointer;">
+      </div>
+
+      <div class="wrapper-body">
+        <label class="wrapper-password-length">
+          <div class="wrapper-password-length-text">
+            <small class="wrapper-password-length-text-left">Character Length</small>
+            <small class="wrapper-password-length-text-right" id="length-value"></small>
+          </div>
+          <input type="range" id="length-input" min="1" max="20" value="16">
+        </label>
+
+        <div class="wrapper-password-check">
+          <label class="wrapper-password-check-label">
+            <input type="checkbox" id="uppercases" checked>
+            <small>Include Uppercase Letters</small>
+          </label>
+          <label class="wrapper-password-check-label">
+            <input type="checkbox" id="lowercases" checked>
+            <small>Include Lowercase Letters</small>
+          </label>
+          <label class="wrapper-password-check-label">
+            <input type="checkbox" id="numbers" checked>
+            <small>Include Numbers</small>
+          </label>
+          <label class="wrapper-password-check-label">
+            <input type="checkbox" id="symbols" checked>
+            <small>Include Symbols</small>
+          </label>
+        </div>
+
+        <div class="wrapper-password-strength">
+          <small class="wrapper-password-strength-text">Strength</small>
+          <div class="wrapper-password-strength-wrapper">
+            <small id="strength-value"></small>
+            <div class="wrapper-password-strength-rectangle-wrapper">
+              <div class="wrapper-password-strength-rectangle"></div>
+              <div class="wrapper-password-strength-rectangle"></div>
+              <div class="wrapper-password-strength-rectangle"></div>
+              <div class="wrapper-password-strength-rectangle"></div>
+            </div>
+          </div>
+        </div>
+
+        <button class="wrapper-password-button" id="generate-password-button">
+          <small>Generate</small>
+          <img src="assets/images/icon-arrow-right.svg" alt="Copy Icon" width="11.105px" height="12px">
+        </button>
+      </div>
+    </div>
+
+    <script src="assets/js/index.js"></script>
+  </body>
+
+</html>

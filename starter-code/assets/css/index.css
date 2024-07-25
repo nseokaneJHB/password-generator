@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+* {
+  box-sizing: border-box;
+  transition: 0.2s;
+  padding: 0;
+  margin: 0;
+}
+
+.to-weak,
+.weak,
+.medium,
+.strong {
+  border: none !important;
+}
+
+.to-weak {
+  background: #F64A4A;
+}
+
+.weak {
+  background: #FB7C58;
+}
+
+.medium {
+  background: #F8CD65;
+}
+
+.strong {
+  background: #A4FFAF;
+}
+
+input {
+  cursor: pointer;
+}
+
+.main-wrapper {
+  background: linear-gradient(180deg, #14131B 0%, #08070B 100%);
+  justify-items: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #E6E5EA;
+  display: flex;
+  padding: 63px 16px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 540px;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.wrapper-heading {
+  color: #817D92;
+  text-align: center;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.wrapper-head {
+  background: #24232C;
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper-head .wrapper-head-password {
+  color: #E6E5EA;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.wrapper-body {
+  background: #24232C;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.wrapper-body .wrapper-password-length {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.wrapper-body .wrapper-password-length .wrapper-password-length-text {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper-body .wrapper-password-length .wrapper-password-length-text .wrapper-password-length-text-left {
+  color: #E6E5EA;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.wrapper-body .wrapper-password-length .wrapper-password-length-text .wrapper-password-length-text-right {
+  color: #A4FFAF;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.wrapper-body .wrapper-password-check {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.wrapper-body .wrapper-password-check .wrapper-password-check-label {
+  display: flex;
+  gap: 20px;
+}
+.wrapper-body .wrapper-password-check .wrapper-password-check-label small {
+  color: #E6E5EA;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.wrapper-body .wrapper-password-check .wrapper-password-check-label input {
+  width: 20px;
+  height: 20px;
+}
+.wrapper-body .wrapper-password-strength {
+  background: #18171F;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+.wrapper-body .wrapper-password-strength .wrapper-password-strength-text {
+  text-transform: uppercase;
+  color: #817D92;
+  text-align: center;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.wrapper-body .wrapper-password-strength .wrapper-password-strength-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.wrapper-body .wrapper-password-strength .wrapper-password-strength-wrapper small {
+  text-transform: uppercase;
+  color: #E6E5EA;
+  text-align: right;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.wrapper-body .wrapper-password-strength .wrapper-password-strength-wrapper .wrapper-password-strength-rectangle-wrapper {
+  display: flex;
+  gap: 8px;
+}
+.wrapper-body .wrapper-password-strength .wrapper-password-strength-rectangle {
+  width: 10px;
+  height: 28px;
+  border: 2px solid #E6E5EA;
+}
+.wrapper-body .wrapper-password-button {
+  background: #A4FFAF;
+  height: 56px;
+  width: 100%;
+  padding: 17px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  cursor: pointer;
+}
+.wrapper-body .wrapper-password-button small {
+  text-transform: uppercase;
+  color: #24232C;
+  text-align: center;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}/*# sourceMappingURL=index.css.map */
