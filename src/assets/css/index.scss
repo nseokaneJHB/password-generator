@@ -35,6 +35,10 @@ input {
 	cursor: pointer;
 }
 
+img:hover {
+	opacity: .7;
+}
+
 .main-wrapper {
 	background: linear-gradient(180deg, #14131B 0%, #08070B 100%);
 	justify-items: center;
@@ -115,6 +119,68 @@ input {
 				line-height: normal;
 			}
 		}
+
+		.length-input {
+			height: 15px;
+			background-color: transparent;
+			position: relative;
+
+			&:hover {
+				opacity: .7;
+			}
+
+			#length-input-right-track {
+				position: absolute;
+				background: #A4FFAF;
+				left: 0;
+				transform: translateY(-100%);
+				height: 8px;
+				top: 7px;
+				z-index: 1;
+				max-width: 100%;
+			}
+
+			#length-input-left-track {
+				position: absolute;
+				left: 0;
+				transform: translateY(-100%);
+				height: 8px;
+				width: 100%;
+				background: #18171F;
+				top: 7px;
+			}
+
+			input {
+				appearance: none;
+				height: 8px;
+				width: 100%;
+				background: transparent;
+				position: absolute;
+				top: 0;
+				z-index: 2;
+
+				&::-webkit-slider-thumb {
+					appearance: none;
+					width: 28px;
+					height: 28px;
+					cursor: pointer;
+					background: #18171F;
+					border-radius: 50%;
+					border: 2px solid #A4FFAF;
+				}
+
+				&::-moz-range-thumb {
+					width: 28px;
+					height: 28px;
+					cursor: pointer;
+					background: #18171F;
+					border-radius: 50%;
+					border: 2px solid #A4FFAF;
+				}
+			}
+
+
+		}
 	}
 
 	.wrapper-password-check {
@@ -125,6 +191,16 @@ input {
 		.wrapper-password-check-label {
 			display: flex;
 			gap: 20px;
+			align-items: center;
+			cursor: pointer;
+
+			&:hover {
+				opacity: .7;
+
+				.custom-checkbox {
+					border-color: #A4FFAF;
+				}
+			}
 
 			small {
 				color: #E6E5EA;
@@ -136,10 +212,34 @@ input {
 			}
 
 			input {
-				width: 20px;
-				height: 20px;
+				display: none;
 			}
 
+			.custom-checkbox {
+				display: inline-flex;
+				justify-content: center;
+				align-items: center;
+				width: 20px;
+				height: 20px;
+				border: 2px solid #E6E5EA;
+				background-color: #24232C;
+				cursor: pointer;
+				position: relative;
+
+				img {
+					display: none;
+				}
+			}
+
+
+			input:checked+.custom-checkbox {
+				background-color: #A4FFAF;
+				border-color: #A4FFAF;
+
+				img {
+					display: block;
+				}
+			}
 		}
 	}
 
@@ -203,6 +303,10 @@ input {
 		justify-content: center;
 		gap: 16px;
 		cursor: pointer;
+
+		&:hover {
+			opacity: .7;
+		}
 
 		small {
 			text-transform: uppercase;

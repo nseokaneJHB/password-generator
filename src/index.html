@@ -28,24 +28,40 @@
             <small class="wrapper-password-length-text-left">Character Length</small>
             <small class="wrapper-password-length-text-right" id="length-value"></small>
           </div>
-          <input type="range" id="length-input" min="1" max="20" value="16">
+          <div class="length-input">
+            <div id="length-input-right-track"></div>
+            <div id="length-input-left-track"></div>
+            <input type="range" id="length-input" min="1" max="20" value="8">
+          </div>
         </label>
 
         <div class="wrapper-password-check">
           <label class="wrapper-password-check-label">
             <input type="checkbox" id="uppercases" checked>
+            <div class="custom-checkbox">
+              <img src="assets/images/icon-check.svg" alt="check-marker-uppercases">
+            </div>
             <small>Include Uppercase Letters</small>
           </label>
           <label class="wrapper-password-check-label">
             <input type="checkbox" id="lowercases" checked>
+            <div class="custom-checkbox">
+              <img src="assets/images/icon-check.svg" alt="check-marker-lowercases">
+            </div>
             <small>Include Lowercase Letters</small>
           </label>
           <label class="wrapper-password-check-label">
             <input type="checkbox" id="numbers" checked>
+            <div class="custom-checkbox">
+              <img src="assets/images/icon-check.svg" alt="check-marker-numbers">
+            </div>
             <small>Include Numbers</small>
           </label>
           <label class="wrapper-password-check-label">
-            <input type="checkbox" id="symbols" checked>
+            <input type="checkbox" id="symbols">
+            <div class="custom-checkbox">
+              <img src="assets/images/icon-check.svg" alt="check-marker-symbols">
+            </div>
             <small>Include Symbols</small>
           </label>
         </div>

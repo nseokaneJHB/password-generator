@@ -2,6 +2,7 @@
 const passwordValue = document.getElementById("password-value");
 const copyButton = document.getElementById("copy");
 
+const lengthTrack = document.getElementById("length-input-right-track");
 const lengthValue = document.getElementById("length-value");
 const lengthInput = document.getElementById("length-input");
 
@@ -126,15 +127,25 @@ const updatePasswordStrength = () => {
 	return passwordStrength;
 };
 
+const setLengthTrackWidth = (length) => {
+	lengthTrack.style.width = `${
+		((length - lengthInput.min) / (lengthInput.max - lengthInput.min)) * 100
+	}%`;
+};
+
 // Initialize values on load
-lengthValue.innerHTML = lengthInput.value;
-passwordValue.innerHTML = generatePassword();
-strengthValue.innerHTML = updatePasswordStrength();
+window.onload = () => {
+	setLengthTrackWidth(lengthInput.value);
+	lengthValue.innerHTML = lengthInput.value;
+	passwordValue.innerHTML = generatePassword();
+	strengthValue.innerHTML = updatePasswordStrength();
+};
 
 // Add event listeners
 lengthInput.addEventListener("input", (event) => {
 	const length = event.target.value;
 	lengthValue.innerHTML = length;
+	setLengthTrackWidth(length);
 });
 
 generatePasswordButton.addEventListener("click", () => {
